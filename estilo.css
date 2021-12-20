@@ -47,6 +47,24 @@ h3{
 }
 .header__logo{
     text-align: left;
+    margin: 0.5rem;
+    width: 15%;
+    background-color: whitesmoke;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 20s; /*no se por qué no respeta este delay*/
+}
+/*Animación*/
+@keyframes logo{
+        0%{ width: 15%;}
+        25%{ width: 20%;
+            background-color: blue;}
+        50%{ font-size: 1.rem;}
+        75%{ background-color: skyblue;}
+        100%{ width: 25%;
+          }
 }
 nav{
     text-align: right;
@@ -117,6 +135,13 @@ a{
     border-radius: 5px;
     position: absolute;
     bottom: 75px;
+    transition: all 1.5s; /*Agregado de Transiciones acá y en la clase principal__hijos*/
+}
+.principal__button:hover{
+    width: 275px; height: 55px;
+    font-size: 1.5rem;
+    background-color: yellowgreen;
+    color: white;
 }
 .principal__titulo{
     margin: 0 1rem 1rem 1rem;
@@ -132,11 +157,16 @@ a{
     height: 390px;
     margin: 10px;
     padding: 10px;
-    background-color: whitesmoke;
+    background-image: linear-gradient(whitesmoke, skyblue);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    transition: all 0.5s;
+}
+.principal__hijos:hover{
+    width: 31%;
+    height: 400px;
 }
 .principal__imgTamaño{
     height: 200px;
@@ -162,13 +192,14 @@ hr{
 .testimonios__texto{
     width: 85%;
     background-color: antiquewhite;
-    margin: 0 5rem 2rem 5rem;
+    margin: 0 5rem 1rem 5rem;
     padding: 1rem;
     font-style: italic;
     font-weight: bold;
 }
 .testimonio__img{
     margin: 1rem;
+    border-radius: 5px;
 }
 /*Footer*/
 .footer{
