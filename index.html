@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./media/favicon-32x32.png">
+    <!--Inserción de CSS al HTML de forma externa-->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Tipografía Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200&display=swap" rel="stylesheet">
+    <title>NovaGym</title>
+</head>
+<body id="top">
+    <!--Comienzo, Logo más Nav con Menú-->
+    <div class="padreGrid">
+        <header class="header">
+                <h3 class="header__logo">LOGO NOVAGYM</h3>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__liMenu"><a href="index.html">Inicio</a></li>
+                    <li class="header__liMenu"><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li class="header__liMenu"><a href="pages/planes.html">Planes</a>
+                        <ul class="header__subMenu">
+                        <li><a href="">Plan A</a></li>
+                        <li><a href="">Plan B</a></li>
+                        <li><a href="">Plan C</a></li>
+                    </ul>
+                    </li>
+                    <li class="header__liMenu"><a href="pages/sedes.html">Sedes</a></li>
+                    <li class="header__liMenu"><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Contenido principal-->
+        <main class="principal">
+            <section class="principal__flex">
+                <div class="principal__img">
+                    <img src="img/58.jpg" width="700px" class="principal--fondo" alt="imágen gimnasio">
+                </div>
+                <!-- este es un botón-->
+                <a href="/pages/contacto.html" class="principal__button">EMPEZÁ AHORA</a>
+                <hr>
+                <h1 class="principal__titulo">CONSEGUÍ TUS METAS</h1>
+            </section>
+            <section class="principalPadre">
+                <div class="principal__hijos">
+                    <h3>Planes Personalizados</h3>
+                    <div class="principal__imgTamaño"><img src="img/planes2.jpg" width="300xp" class="principal--imgBordes" alt="planificación de rutina"></div>
+                    <p class="principal__parrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem nesciunt minus possimus illum labore velit vel, atque totam nulla.
+                    </p>
+                </div>
+                <div class="principal__hijos">
+                    <h3>Sedes, elegí la tuya</h3>
+                    <div class="principal__imgTamaño"><img src="img/sedes.png" width="300xp" class="principal--imgBordes" alt="planificación de rutina"></div>
+                    <p class="principal__parrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem nesciunt minus possimus illum labore velit vel, atque totam nulla.
+                    </p>
+                </div>
+                <div class="principal__hijos">
+                    <h3>Nuestros Profes</h3>
+                    <div class="principal__imgTamaño"><img src="img/profes.jpg" width="300xp" class="principal--imgBordes" alt="planificación de rutina"></div>
+                    <p class="principal__parrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem nesciunt minus possimus illum labore velit vel, atque totam nulla.
+                    </p>
+                </div>
+            </section>
+            <hr>
+        </main>
+        <!--Sección de Testimonios-->
+        <section class="testimonios">
+            <h1 class="testimonios__titulo">TESTIMONIOS NOVA</h1>
+                <p class="testimonios__texto">"A lo largo del tiempo puedo decir que en este lugar encontré más que un gimnasio una segunda casa, los dueños a los cuales les puedo decir amigos, inculcan a su staff mucho trabajo, tiempo y dedicación. Todo el staff está comprometido en brindar un servicio profesional sin olvidar la parte humana. - Dedicación, contención, amistad."</p>
+                <img src="img/testigo.jpg" width="200xp" class="testimonio__img" alt="persona que da testimonio">
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer__flex">
+                <h3 class="footer__titulos">LOGO NOVAGYM</h3>
+                <h3 class="footer__titulos">Navegar</h3>
+                <h3 class="footer__titulos">Contacto</h3>
+                <h3 class="footer__titulos">Trabaja con Nosotros</h3>
+            </div>
+            <div class="footer__botonArriba"><a href="#top">Ir arriba</a></div>
+        </footer>
+    </div>
+</body>
+</html>

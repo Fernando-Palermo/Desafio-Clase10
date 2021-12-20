@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/favicon-32x32.png">
+    <!--Inserción de CSS al HTML de forma externa-->
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- Tipografía Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200&display=swap" rel="stylesheet">
+    <title>NovaGym</title>
+</head>
+<body>
+    <!--acá comienza mi página, logo + nav-->
+    <header>
+        <h3>
+            LOGO NOVAGYM
+        </h3>
+        <nav>
+            <ul class="menu">
+                <li class="liMenu"><a href="../index.html">Inicio</a></li>
+                <li class="liMenu"><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="liMenu"><a href="../pages/planes.html">Planes</a>
+                    <ul class="submenu">
+                        <li><a href="">Plan A</a></li>
+                        <li><a href="">Plan B</a></li>
+                        <li><a href="">Plan C</a></li>
+                    </ul>
+                </li>
+                <li class="liMenu"><a href="../pages/sedes.html">Sedes</a></li>
+                <li class="liMenu"><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--cierre de fila de logo+nav-->
+    <!--inicio de contenido principal-->
+    <main id="top">
+        <section>
+            <h1>
+                CONTACTO NOVAGYM
+            </h1><br>
+            <p></p>
+            <form action="#">
+                <fieldset>
+                    <legend>Para más información, completá el formulario</legend>
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="name" placeholder="Nombre">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Apellido">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">* Escribe tu email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="provincia">Elige tu provincia</label>
+                        <select name="provincia" id="">
+                            <option value="argentina">BUENOS AIRES</option>
+                            <option value="uruguay">CÓRDOBA</option>
+                            <option value="perú">SANTA FE</option>
+                        </select>
+                    </div>
+                    <p>Elige tu provincia para recibir información de esa sede provincial.</p>
+                    <div>
+                        <label for="comentario">Motivo del contacto</label>
+                        <br>
+                        <textarea name="comentario" id="" cols="60" rows="10"></textarea>
+                        <br>
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR">  <input type="reset" value="BORRAR">
+                        <br>                        
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <br>
+    <!--comienzo del footer-->
+    <footer>
+        <h3 class="h3Foot">LOGO NOVAGYM</h3>
+        <h3 class="h3Foot">Navegar</h3>
+        <h3 class="h3Foot">Contacto</h3>
+        <h3 class="h3Foot">Trabaja con Nosotros</h3>
+        <div><a href="#top">Ir arriba</a></div>
+    </footer>
+    <!--fin del footer--> 
+</body>
+</html>
